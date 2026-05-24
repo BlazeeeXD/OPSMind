@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-terminal-bg text-terminal-cyan font-mono antialiased overflow-hidden selection:bg-terminal-cyan selection:text-terminal-bg m-0 p-0;
+  }
+  
+  /* Force the React root to take up the full screen */
+  #root {
+    @apply w-full h-screen m-0 p-0;
+  }
+}
+
+/* Custom scrollbar to match the vibe */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-terminal-bg;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-terminal-border rounded-none hover:bg-terminal-cyan transition-colors;
+}

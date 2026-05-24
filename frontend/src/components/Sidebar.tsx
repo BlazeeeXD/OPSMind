@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AlertCircle, AlertTriangle, Activity, Database, Server, Info } from 'lucide-react';
+import { AlertCircle, AlertTriangle, Activity, Database, Server } from 'lucide-react';
 import { api } from '../api/client';
 import type { Incident } from '../types';
 

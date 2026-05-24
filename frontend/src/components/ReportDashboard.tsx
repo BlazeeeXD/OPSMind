@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { api } from '../api/client';
 import type { InvestigationReport } from '../types';
-import { ShieldAlert, GitCommit, CheckCircle2, AlertTriangle, Clock } from 'lucide-react';
+import { ShieldAlert, CheckCircle2, Clock } from 'lucide-react';
 
 interface ReportProps {
   incidentId: number;

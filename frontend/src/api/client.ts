@@ -1,4 +1,4 @@
-const BASE_URL = 'http://127.0.0.1:8000';
+const BASE_URL = 'https://opsmind-api-YOUR-URL.onrender.com';
 
 export const api = {
   // Get all active incidents
